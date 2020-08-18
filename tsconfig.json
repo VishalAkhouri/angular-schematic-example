@@ -6,5 +6,12 @@
 */
 {
   "files": [],
-  "references": []
+  "references": [
+    {
+      "path": "./projects/example-schematic/tsconfig.lib.json"
+    },
+    {
+      "path": "./projects/example-schematic/tsconfig.spec.json"
+    }
+]
 }
