@@ -1,6 +1,14 @@
 {
   "name": "example-schematic",
   "version": "0.0.1",
+  "scripts": {
+    "build": "../../node_modules/.bin/tsc -p tsconfig.schematics.json",
+    "copy:schemas": "rsync -R schematics/*/schema.json ../../dist/example-schematic/",
+    "copy:files": "rsync -R schematics/*/files/** ../../dist/example-schematic/",
+    "copy:collection": "rsync schematics/collection.json ../../dist/example-schematic/schematics/collection.json",
+    "postbuild": "npm run copy:schemas && npm run copy:files && npm run copy:collection"
+  },
+  "schematics": "./schematics/collection.json",
   "peerDependencies": {
     "@angular/common": "^10.0.9",
     "@angular/core": "^10.0.9",

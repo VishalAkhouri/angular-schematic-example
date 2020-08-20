@@ -2,12 +2,9 @@
   "name": "angular-schematic-example",
   "version": "0.0.0",
   "scripts": {
-    "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e"
+    "build:example-schematic": "ng build example-schematic --prod && (cd projects/example-schematic && npm run build)",
+    "publish:local:example-schematic": "(cd dist/example-schematic && npm pack)",
+    "publish:example-schematic": "(cd dist/example-schematic && npm publish)"
   },
   "private": true,
   "dependencies": {

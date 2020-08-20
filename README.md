@@ -1,7 +1,6 @@
-# AngularSchematicExample
+# Angular Schematic Example
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
-
+Example code for Medium article: https://medium.com/@akhouri/steps-creating-your-first-angular-schematic-28a88d518ade
 ## Development notes
 
 - Create new angular project as library

@@ -1,0 +1,10 @@
+{
+  "$schema": "../../node_modules/@angular-devkit/schematics/collection-schema.json",
+  "schematics": {
+    "create-component": {
+      "description": "Generate a custom component in the project.",
+      "factory": "./create-component/index#createComponent",
+      "schema": "./create-component/schema.json"
+    }
+  }
+}
